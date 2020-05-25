@@ -1,0 +1,84 @@
+// Configurations Command
+git config --global user.name "sachin"
+git config --global user.email "sachin.tiwari@crimsoni.com"
+git config --list
+git config user.name
+git config user.email
+
+// show the all files git status 
+git status
+git status -s
+
+// commit command
+git add --a
+git add .
+git commit -m "commit message"
+git commit -a -m "commit message"
+
+// old log details
+git log
+git log -p -2  //enter how commit you want to see   ... enter "q" to go out the details
+
+// compare working directory and staging area
+git diff
+
+// Add Git Ignore file 
+touch .gitignore
+
+
+// compare working directory and last commit
+git diff --staged
+
+// Match the old commit 
+git checkout index.html
+git checkout -f   // For all files
+
+// Delete git repo
+rm -rf .git
+
+// change desc
+cd
+
+// Show all files
+ls
+
+// Show all hidden files
+ls -lart
+
+// clear terminal
+clear
+
+// remove file from commit and move on untracked 
+git rm --cached file_name_here
+
+// delete file from the commit and local
+git rm file_name_here
+
+// Branch comments
+git branch new_branch_name_here
+git branch
+git checkout branch_name_here
+git checkout -b new_branch_name_here
+
+// marge new branch with master process
+git checkout master
+git merge working_branch_name
+
+// Remote Repository
+git remote add origin https://github.com/sachincrimsoni/testing_git.git
+
+//check remote all repository 
+git remote
+
+// check remote repo url
+git remote -v
+
+// first push
+git push -u origin master
+
+
+//Generating a new SSH key and adding it to the ssh-agent
+https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+//Adding a new SSH key to your GitHub account
+https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
